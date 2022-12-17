@@ -1,2 +1,8 @@
 # config files
-.vscode/
+**/.vscode/
+
+# cached files
+**/__pycache__/
+
+# large data file
+**/data/

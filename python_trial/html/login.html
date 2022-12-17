@@ -1,0 +1,160 @@
+<form method="post" 
+      action="./login-sso.aspx?bmctx=05D50DFC1A22D156FEC7A630EB2EFA98&amp;enablePersistentLogin=true&amp;OAUTH_SSO_ENC_KEY=C57DBB5C08DA42B6E90C86AF0C895A9B1C0828BB0FD48E2881852858161950DE&amp;password=secure_string&amp;OAUTH_TOKEN_RESPONSE=header&amp;contextType=external&amp;IS_OAUTH_OAM_SSO_LINK_ENABLED=true&amp;OAUTH_SSO_ID_DOMAIN=SPGLBDomain&amp;IS_OAUTH_USER_ASSERTION_ENABLED=true&amp;OverrideRetryLimit=0&amp;env=WAM12C&amp;username=string&amp;challenge_url=https%3a%2f%2fwww.capitaliq.com%2fciqdotnet%2flogin-sso.aspx&amp;request_id=7643654217364446066&amp;authn_try_count=0&amp;locale=en_US&amp;resource_url=https%253A%252F%252Fwww.capitaliq.com%252FCIQDotNet%252FLogin.aspx" 
+      id="LoginSSOFrm" 
+      onsubmit="return checkuser()"
+      style="margin-top: 0;"
+>
+  <div class="aspNetHidden">
+  <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
+  <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
+  <input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTExMDkwNTgzMjBkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYCBRJjaGtQZXJzaXN0ZW50TG9naW4FDW15TG9naW5CdXR0b26tShc8iAErImGFiH8Zibbrw20ef+qaewVN3t1iK1pjvw==">
+  </div>
+  
+  <script type="text/javascript">
+  //<![CDATA[
+  var theForm = document.forms['LoginSSOFrm'];
+  if (!theForm) {
+      theForm = document.LoginSSOFrm;
+  }
+  function __doPostBack(eventTarget, eventArgument) {
+      if (!theForm.onsubmit || (theForm.onsubmit() != false)) {
+          theForm.__EVENTTARGET.value = eventTarget;
+          theForm.__EVENTARGUMENT.value = eventArgument;
+          theForm.submit();
+      }
+  }
+  //]]>
+  </script>
+  
+  <script src="/CIQDotNet/WebResource.axd?d=LeVmbDbGQQLuKmEOu5PaTHv2vWB5OO2Iy7w0V6gY7z1KCVlJo3xkt9ORIvT145oFyrXWoNl-kLEKa2MThwn7Uc-yaWMfOIBd7hirnOOozts1&amp;t=636576814480000000" type="text/javascript"></script>
+  
+  <script type="text/javascript">
+    //<![CDATA[
+    var googleReCaptchaSiteKey = '6LdMlwMTAAAAANFNv3jgaLK_UdMs5pdr0ZaM-3fr';//]]>
+  </script>
+  
+  <script src="/CIQDotNet/ScriptResource.axd?d=199of89Q0tfJiqZz-RziT7-5-gxGVSK8dH6vTgjxfbs5VUIkuXdMFApXr562O1Vwl2jHixg2FIEJtfoMRu6E8zEbZZRWFWZedhDxsusjowIooywdFcrHIxHdnnyv_RwHtRzZZQCfvIk76MUOCCsypSitDMYr40nrejmIw2F7vqw1&amp;t=ffffffffcd368728" type="text/javascript"></script>
+
+  <script src="/CIQDotNet/ScriptResource.axd?d=7lARr3sUZICSbxBARzdvnE5Jm_Eall2Nk54DV-x60mDf6YH3J1B9ues7tae_0eSYXUbMVnGuMEX114crrwxGyfEVuMe5y9axFcUzjbL60kcIaYcW9QCWc7KTyFvDUowdr5Y1tKUyr8R5WRtIhS5-SySKI34ZabFD3xYhIz-LHSqBGiGzyD3_SrQZYxddLe1E0&amp;t=ffffffffcd368728" type="text/javascript"></script>
+
+  <script type="text/javascript">
+    //<![CDATA[
+    var PageMethods = function() {
+    PageMethods.initializeBase(this);
+    this._timeout = 0;
+    this._userContext = null;
+    this._succeeded = null;
+    this._failed = null;
+    }
+    PageMethods.prototype = {
+    _get_path:function() {
+    var p = this.get_path();
+    if (p) return p;
+    else return PageMethods._staticInstance.get_path();},
+    EncodeUserName:function(username,succeededCallback, failedCallback, userContext) {
+    return this._invoke(this._get_path(), 'EncodeUserName',false,{username:username},succeededCallback,failedCallback,userContext); },
+    DecodeUserName:function(username,succeededCallback, failedCallback, userContext) {
+    return this._invoke(this._get_path(), 'DecodeUserName',false,{username:username},succeededCallback,failedCallback,userContext); },
+    GetFailedLoginCount:function(username,succeededCallback, failedCallback, userContext) {
+    return this._invoke(this._get_path(), 'GetFailedLoginCount',false,{username:username},succeededCallback,failedCallback,userContext); },
+    GetCaptchaStatus:function(username,succeededCallback, failedCallback, userContext) {
+    return this._invoke(this._get_path(), 'GetCaptchaStatus',false,{username:username},succeededCallback,failedCallback,userContext); }}
+    PageMethods.registerClass('PageMethods',Sys.Net.WebServiceProxy);
+    PageMethods._staticInstance = new PageMethods();
+    PageMethods.set_path = function(value) { PageMethods._staticInstance.set_path(value); }
+    PageMethods.get_path = function() { return PageMethods._staticInstance.get_path(); }
+    PageMethods.set_timeout = function(value) { PageMethods._staticInstance.set_timeout(value); }
+    PageMethods.get_timeout = function() { return PageMethods._staticInstance.get_timeout(); }
+    PageMethods.set_defaultUserContext = function(value) { PageMethods._staticInstance.set_defaultUserContext(value); }
+    PageMethods.get_defaultUserContext = function() { return PageMethods._staticInstance.get_defaultUserContext(); }
+    PageMethods.set_defaultSucceededCallback = function(value) { PageMethods._staticInstance.set_defaultSucceededCallback(value); }
+    PageMethods.get_defaultSucceededCallback = function() { return PageMethods._staticInstance.get_defaultSucceededCallback(); }
+    PageMethods.set_defaultFailedCallback = function(value) { PageMethods._staticInstance.set_defaultFailedCallback(value); }
+    PageMethods.get_defaultFailedCallback = function() { return PageMethods._staticInstance.get_defaultFailedCallback(); }
+    PageMethods.set_enableJsonp = function(value) { PageMethods._staticInstance.set_enableJsonp(value); }
+    PageMethods.get_enableJsonp = function() { return PageMethods._staticInstance.get_enableJsonp(); }
+    PageMethods.set_jsonpCallbackParameter = function(value) { PageMethods._staticInstance.set_jsonpCallbackParameter(value); }
+    PageMethods.get_jsonpCallbackParameter = function() { return PageMethods._staticInstance.get_jsonpCallbackParameter(); }
+    PageMethods.set_path("login-sso.aspx");
+    PageMethods.EncodeUserName= function(username,onSuccess,onFailed,userContext) {PageMethods._staticInstance.EncodeUserName(username,onSuccess,onFailed,userContext); }
+    PageMethods.DecodeUserName= function(username,onSuccess,onFailed,userContext) {PageMethods._staticInstance.DecodeUserName(username,onSuccess,onFailed,userContext); }
+    PageMethods.GetFailedLoginCount= function(username,onSuccess,onFailed,userContext) {PageMethods._staticInstance.GetFailedLoginCount(username,onSuccess,onFailed,userContext); }
+    PageMethods.GetCaptchaStatus= function(username,onSuccess,onFailed,userContext) {PageMethods._staticInstance.GetCaptchaStatus(username,onSuccess,onFailed,userContext); }
+    //]]>
+  </script>
+  
+  <div class="aspNetHidden">
+    <input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="806EEE24">
+    <input type="hidden" name="__EVENTVALIDATION" id="__EVENTVALIDATION" value="/wEdAAddU0XuV95ALkLeSe6ethRU708H97U8FzMiOktCXyLfGyoaAslXSbSyIrOQIGGf0WHuLHIiTtx6HOvMUxbWRkBIDZ69wkiyyJ/oxQOqev9pSfS+y5LWoFnyLY3pjnkzw/PMp84B9comCgoGA6Syf9CBXiThXavRSy+YbMMqY98JHU02vWI1+SgmAkuHv9hIUD0=">
+  </div>
+  <script type="text/javascript">
+    //<![CDATA[
+    Sys.WebForms.PageRequestManager._initialize('ScriptManager1', 'LoginSSOFrm', [], [], [], 90, '');
+    //]]>
+  </script>
+  
+  <input name="captchaValidated" type="hidden" id="captchaValidated" value="0">
+  <table id="Table1" cellspacing="2" cellpadding="2" style="border-width:0px;">
+    <tbody>
+      <!--First Table Row - user input row-->
+      <tr id="userinputrow">
+        <td>
+          <!--Ordered List-->
+          <ol style="list-style-type: none;">
+            <!--List Item 1 - username input-->
+            <li style="display: block; margin-bottom: 25px;">
+              <label for="username" style="display: block; margin: 3px 0 3px; font: 12px Arial; font-weight: normal; color: #525252;">Username</label>
+              <input name="username" type="text" id="username" tabindex="1" align="left" size="39" style="width:260px;height: 23px; width: 260px; -webit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; background-color: #cbcbcb; border: 1px solid #cbcbcb;">
+            </li>
+
+            <!--List Item 2 - password input-->
+            <li style="display: block; margin-bottom: 10px;">
+              <label for="password" style="display: block; margin: 3px 0 3px; font: 12px Arial; font-weight: normal; color: #525252;">Password</label>
+              <input name="password" type="password" maxlength="50" size="15" id="password" tabindex="2" align="left" style="width:260px;height: 23px; width: 260px; -webit-border-radius: 8px; -moz-border-radius: 8px; border-radius: 8px; background-color: #cbcbcb;  border: 1px solid #cbcbcb;">
+            </li>
+
+            <!--List Item 3 - Remember Me-->
+            <li style="display: block; margin-bottom: 10px;">
+              <input name="PersistentLogin" type="hidden" id="PersistentLogin" value="false">
+              <span face="Arial" color="#00bbdd;" style="FONT-WEIGHT:100; FONT-SIZE:8px; color: #00bbdd;">
+                <input id="chkPersistentLogin" type="checkbox" name="chkPersistentLogin" onclick="document.getElementById('PersistentLogin').value=this.checked;" tabindex="3">
+                <label for="chkPersistentLogin">
+                  <span style="margin-left: 5px; font-size: 12px;">Remember me</span>
+                </label>
+              </span>                                        
+            </li>
+            
+            <!--List Item 4-->
+            <li style="display: block; margin-bottom: 10px;">
+              <a href="/ciqdotnet/forgotpassword.aspx" style="font: Arial; font-weight: normal; color: #00bbdd;">Forgot Your Password?</a><br>
+              <a href="/ciqdotnet/forgotpassword.aspx?unlock=1" style="font: Arial; font-weight: normal; color: #00bbdd;">Unlock Your Account?</a><br>
+              <a href="/CIQDotNet/SandPCapitalIQClientServices.html" target="_blank" style="font: Arial; font-weight: normal; color: #00bbdd;">Support &amp; Training</a>
+            </li>
+
+            <!--List Item 5-->
+            <li style="display: block; margin-bottom: 10px;">
+              <input type="image" name="myLoginButton" id="myLoginButton" tabindex="4" alt="Sign In" src="https://qt-w3.ciqimg.com/CIQDotNet/images/Brochureware/sign_in_btn_123x23.png?urwvid=4027062802" style="margin-left: 140px;">
+            </li>
+
+          </ol>
+        </td>
+      </tr>
+
+      <!--Second Table Row - My Message Row-->
+      <tr id="myMessageRow">
+        <td id="TableCell1">
+          <asp:tablerow></asp:tablerow>
+          <table border="0" cellpadding="0" cellspacing="0">
+            <tbody>
+              <tr>
+                <td>                                                     
+                  <div style="color:#CC0000;display:none;" id="DisabledCookiesMessageDiv">Your browser is currently set to block cookies. Please enable them to login to CapitalIQ, and refresh the page to re-enable the login controls.  If you need further assistance please contact Client Support or email clientsupport@capitaliq.com.</div>
+                </td>                
+              </tr>
+            </tbody>
+          </table>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</form>

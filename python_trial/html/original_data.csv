@@ -1,0 +1,582 @@
+﻿id,lender_norm1
+1,Deutsche Bank
+2,G.E. Capital
+3,Wells Fargo & Co
+4,Morgan Stanley
+5,"Swift Receivables Company II, LLC"
+6,General Electric Capital Corp
+7,JP Morgan Securities Inc
+8,Goldman Sachs & Co
+9,CIT Group/Business Credit Inc
+10,"CIT Group/Financial Services, Inc."
+11,Congress Financial Corp
+12,"Apollo A-N Credit Management, LLC "
+13,GMAC Commercial Finance
+14,Morgan Stanley Senior Funding Inc
+15,Fleet Capital Corp
+16,"Hercules Technology Growth Capital, Inc. "
+,"Hercules Capital, Inc."
+17,JP Morgan
+18,ArvinMeritor Receivables Corporation
+19,Liberty Street Funding LLC
+20,Gotham Funding Corporation
+20,"Cummins Trade Receivables, LLC"
+21,"AUTOMOTIVE FINANCE CORPORATION,"
+22,Northern Trust
+23,CIT Group Inc
+24,Citigroup Global Markets Inc
+25,MidCap Financial Trust
+26,Rabobank Nederland NV
+27,Congress Financial Corp.
+28,Foothill Capital Corp
+29,Siemens Credit Corp
+30,GS Capital Partners
+31,Wells Fargo Foothill Inc
+32,GMAC Commercial Finance [fka GMAC Commercial Credit LLC]
+33,Wachovia Securities
+34,GE Capital Markets Inc
+35,Factoring VIE
+,Factoring Limited
+36,SWC Receivables Funding LLC
+37,Credit Suisse AG
+38,GE Capital Corp
+39,ABL Credit Facility
+40,Dresdner Bank AG
+41,ING Bank
+42,The Bank of Tokyo-Mitsubishi 
+43,"Minnesota Power, Inc."
+44,MassMutual Funding LLC
+45, General Electric Capital Corporation
+46,"B. Riley Financial, Inc"
+47,Wells Fargo Retail Finance
+48,HSBC Business Credit (USA) Inc
+49, G.E.  Capital 
+50,"GMAC Business Credit, LCC"
+51,BB&T Corp
+52,Toronto Dominion Bank
+53,SunTrust Bank Atlanta
+54,Royal Bank of Scotland Plc [US]
+55,Yasuda Trust & Banking Co Ltd
+56,"Heller Financial, Inc. "
+57,"BOA, N.A.; Wells Fargo, N.A."
+58,Citicorp USA Inc
+59,JP Morgan Capital
+60,"CIT Group/ Commercial Services, Inc."
+61,"Circleup Credit Advisors, LLC"
+62,VW Credit Inc
+63,National City Bancorporation
+64,Three Pillars Funding LLC
+65,HBI Receivables LLC
+66,"Coyote Funding, LLC"
+67,"Coyote Funding, L.L.C."
+68,Harris Nesbitt
+69,ASDA Financial Services Limited
+70,"Silver Point Finance, LLC"
+71,GE Factofrance S.A.S.
+72,Ableco Finance LLC
+73,Wachovia Capital Finance Corp (Central)
+74,Merrill Lynch Capital Corp
+75,Business Credit Direct Corp
+76,CMC Corporation 
+77,Scotia Asset Finance
+,Scotia Finance Limited
+78,HSH Nordbank AG
+79,UPS Capital Corp
+80,Morgan Stanley Dean Witter Prime Income Trust
+81,Foothill Capital Corporation
+82,Fleet Retail Finance
+83,Merrill Lynch Business Financial Services Inc.
+84,BrightView Funding LLC
+85,the Ohio Environmental Protection Agency
+86,Barclays Capital
+87,Healthcare Finance Group LLC
+88,Italian RPA
+89,"Revlon, Inc"
+90,BankBoston
+91,Lehman Commercial Paper Inc
+92,"TPG Specialty Lending, Inc."
+93,RBS Citizens NA
+94,UBS AG Stamford Branch
+95,BNP Paribas SA
+96,Residential Funding Corporation
+97,AIB Capital Markets
+98,JWPR Corporation
+99,"Laurus Master Fund, Ltd"
+100,NBD Bank NA
+101,National City Business Credit
+102,BNP Paribas Fortis 
+103,First Chicago
+104,Societe Generale SA
+105, Congress Financial Corporation
+106,VIP Acquisition
+107,"Rosenthal & Rosenthal, Inc"
+108,DZ Bank
+109,Bank of America National Trust & Savings
+110,Guaranty Business Credit Corp
+111,Wells Fargo HSBC Trade Bank
+112,Textron Financial Corp
+113,Credit Lyonnais Leasing International SA
+114,Banc of America Securities LLC
+115,CIT Group Plc [Capital & Income Trust]
+116,Prudential Commercial Bank
+117,"Ableco Finance, LLC"
+118,TransAmerica Business Capital Corp
+119,"CIT Group/Commercial Services, Inc"
+120,Heller Healthcare Finance Inc
+121,APW Ltd.
+122,"Salus Capital Partners, LLC"
+123,MC Admin Co LLC
+124,CIBC World Markets
+125,Textron Financial Corporation 
+126,Greenwich Capital Finance
+127,UBS Warburg
+128,Sumitomo Bank
+129,the US EPA
+130,Healthcare Business Credit Corp
+131,Finova Capital Corporation
+132,COLF
+133,NationsBank of Texas
+134,GMAC Commercial Finance LLC
+135,"GC Financial Services, Inc."
+136,Credit Lyonnais New York
+137,IBJ Whitehall Business Credit Corp
+138,CCE
+139,"GS Industries, Inc. "
+140,International Development Bank
+141,"Cerberus Business Finance, LLC"
+142,North Fork Business Capital
+143,ACF FinCo I LP
+144,Healthcare Finance Group Inc
+145,Jefferies Finance LLC
+146,"Encina Business Credit, LLC"
+147,"Gordon Energy Servicer, LLC"
+148,Global GP LLC 
+149,Windmill Funding Corporation
+150,"GMAC Commercial Finance, LLC"
+151,Morgan Guaranty Trust
+152,Natixis SA [Ex-Natexis Banques Populaires]
+153,UBS Securities LLC
+154,GMAC Commercial Credit LLC
+155,Lloyds Bank Commercial Finance Limited
+156,Guaranty Federal Bank
+157,Saberasu Japan Investments II BV
+158,Coast Business Credit
+159,General Motors Acceptance Corp
+160,"GMAC Commercial Finance Credit, LLC"
+161,GMAC COMMERCIAL FINANCE LLC
+162,NAI
+163,GE Factofrance
+164,TransAmerica Finance Corp
+165,SPCP Group LLC
+166,"Nomura Corporate Funding America, LLC"
+167,Century Business CreditCorporation
+168,"First  Security  Bank,  N.A."
+169,Foothill Income Trust II LP
+170,"Banc of America Securities, LLC"
+171,FleetBoston
+172,Niagara Therapy (U.K.) Limited
+173,Corporate and Investment Bank
+174,US Bancorp
+175,Concord Camera HK
+176,"DHB Industries, Inc"
+177,"De Lage Landen Financial Services, Inc."
+178,"Milberg Factors, Inc"
+179,Crystal Financial LLC
+180,Wells Fargo - Texas
+181,"Rosenthal & Rosenthal, Inc."
+182,Wells Fargo Capital Finance LLC
+183,Sea Pines Funding LLC
+184,WFF
+185,FTC Commercial Corp
+186,LaSalle Business Credit Inc
+187,Barclays Business Credit
+188,GE Capital Franchise Finance Corp
+189,ABN AMRO Inc
+190,"AMF Bowling, Inc. "
+191,Vitas Healthcare Corporation
+192,"Roth Capital Partners, LLC"
+193,"Sport Supply Group, Inc."
+194,Oxford Finance LLC
+195,"National Century Financial Enterprises, Inc"
+196,Kimco Realty Corporation
+197,Heller Germany
+198,RFC Capital Corporation
+199,Sumitomo Bank of California
+200,"The Dime Savings Bank of New York, FSB"
+201,"Marquette Business Credit, Inc."
+202,"Faunus Group International, Inc."
+203,IBM Credit LLC.
+204,Presidential Financial Corporation
+205,"WB QT, LLC"
+206,Antares Holdings
+207,Debis Financial Services Inc
+208,Banamex
+209,Wayzata
+210,Guaranty Business Credit Corporation
+211,Keltic Financial Partners. LP
+212,"Pacific Business Funding, a division of Cupertino National Bank"
+213,Brown Brothers Harriman & Co
+214,Madeleine LLC
+215,AT&T Commercial Finance Corp
+216,Coast Business Credit Corp
+217,The Hongkong and Shanghai Banking
+218,IBJ Whitehall Bank & Trust Co
+219,Alfa-Bank
+220,"WELLS FARGO CENTURY, INC."
+221,LaSalle Business Credit
+222,Fortress Credit Corp
+223,"Thermo Credit, LLC"
+224,Blue Crest Venture Finance Master Fund Limited
+225,Marine Midland Bank
+226,CIT Group
+227,Merrill Lynch Business Financial Services Inc
+228,"FCC, LLC (dba. First Capital Western Region)"
+229,Capco Financial Corporation
+230,BNP Paribas Fortis Factor
+231,"Capital Factors, Inc"
+232,"The CIT Group/Commercial Services, Inc."
+233,Fast Pay Partners LLC
+234,Norwest Business Credit
+235,Pacific Business Funding
+236,ComVest Capital LLC 
+237,Wells Fargo Business Credit Inc
+238,"Sallyport Commercial Finance, LLC"
+239,"White Oak Commercial Finance, LLC"
+240,Gibraltar Business Capital
+241,"United Technologies Optical Systems, Inc"
+242,"Alterna Capital Solutions, LLC "
+243,Transamerica Business Credit Corporation
+244,Ulster Bank Markets
+245,"Greenfield Commercial Credit, LLC"
+246,"JT USA, L.P."
+247,International Business Machines Corporat
+248,Private Equity Management Group Financial Corporation
+249,Bank of America Business Capital 
+250,CapitalSource Finance
+251,"Capital Temp Funds, Inc."
+252,Pinnacle Ventures LLC
+253,LSQ Funding Group
+254,"PMC Financial Services Group, LLC"
+255,Norwest  Business  Credit
+256,Naxyris S.A
+257,Blue Ridge Asset Funding Corporation
+258,"Allied Capital Partners, L.P"
+259,Webster Business Credit Corporation
+260,Siena Lending Group LLC
+261,M-I L.L.C.
+262,Exar Corporation 
+263,IBJ Whitehall-Financial Group
+264,"Faunus Group International, Inc"
+265,Enron North America Corp
+266,"Advance Payroll Funding, Inc"
+267,ROCKLAND CREDIT FINANCE LLC
+268,Vectra Bank 
+269,Avidbank Corporate Finance
+270,"Heller Financial, Inc."
+271,Interact Commerce Corporation
+272,"DSCH Capital Partners, LLC "
+273,"CIT Group, Inc."
+274,Marquette Commercial Finance
+275,"SCM Specialty Finance Opportunities Fund,L.P."
+276,"AT&T Credit Holdings, Inc."
+277,"FastPay Partners, LLC"
+278,"Gemino Healthcare Finance, LLC"
+279,GMAC Commercial Credit LLC 
+280,"Quantum Value Partners, LP"
+281,"Healthcare Finance Group, LLC"
+282,Sapinda UK Limited
+283,Southern Finance
+284," CIT  Group/Business  Credit,  Inc"
+285,Textron Financial  Corporation
+286,Rockland Credit Finance LLC
+287,Paragon Capital LLC
+288,Creditanstalt Bankverein
+289,Wells Fargo Retail Finance II LLC
+290,Transamerica  Commercial Finance  Corporation
+291,Missouri State Bank
+292,Silicon Valley Financial Services
+293,Fast Pay Partners LLC 
+294,Presstek and KeyBank N.A.
+295,the USW
+296,Webster Business Credit Corp
+297,"CNH Finance Fund I, L.P."
+298,Brown Brothers Harriman & Co. 
+299,Wells Fargo Financial Corp Canada
+300," FIN Branding Group, LLC "
+301,NBT Bank
+302,NIL Funding Corporation
+303,"Hercules Technology II, L.P."
+304,Prestige Capital Corporation
+305,"Factors Southwest, LLC"
+306,"Nittan USA, Inc."
+307,"ComVest Capital, LLC"
+308,Deutsche Financial Services Corp
+309,"Crestmark Commercial Capital Lending, LLC"
+310,"Working Capital Solutions, Inc"
+311,"Lone Star Value Investors, LP"
+312,Rosenthal & Rosenthal Inc
+313,"FCC, LLC"
+314,"Integretel, Inc. (IGT)"
+315,DVI Business Credit
+316,Capital Business Credit
+317,GE Capital Commercial Services
+318,"Monroe Capital Management Advisors, LLC "
+319,J. Aron & Company 
+320,Bank of America Business Finance Corporation (fka. NationsBanc Business Finance Corporation)
+321, Hitachi Capital America Corp. 
+322,US Bank of California
+323,Austin Financial Services
+324,"Federal National Payables, Inc."
+325,ASI Holdings Limited
+326,Residential Funding Corp
+327,Bank of Boston
+328,"Bluefin Capital, LLC"
+329,BNP Paribas [Ex-Banque Paribas]
+330,S&T Bank
+331,Sabadell Bank
+332,Sam Moore? Bradington-Young?
+333,Action Capital Corporation
+334,"CIT Group, Inc"
+335,Brooks Investment Co.
+336,Brooks Investment Co. 
+337,"AEC Yield Capital, LLC"
+338,Hongkong and Shanghai Banking Corporation Limited
+339,DVI Business Credit Corporation 
+340,Frost Capital Group
+341,Gerber Finance Inc.
+342,"Crown Financial, LLC"
+343,BFI Business Finance
+344,"Associated Receivables Funding, Inc."
+345,the Private Bank of Peninsula
+346,HFG Healthco-4 LLC
+347,"SYSTRAN Financial Services, Inc."
+348,BNP Paribas Fortis
+349,North Mill Capital LLC
+350,"Faunus Group International, Inc. "
+351,"Summit Financial Resources, L.P."
+352,Systran Financial Services Corporation
+353,"MILBERG FACTORS, INC."
+354,"GemCap Lending I, LLC"
+355,"East Asset Management, LLC "
+356,BayView Funding
+357,"CVC California, LLC"
+358,"Bibby Financial Services (Midwest), Inc."
+359,BMR-Pacific Research Center L.P.
+360,"Health Holdings & Botanicals, LLC,"
+361,the Silver Foxes Network
+362,Dresdner Bank
+363,Action Capital Agreement
+364,"Allied Affiliated Funding, L.P. "
+365,Midland American Capital Corporation
+366,CSNK Working Capital Finance (dba. Bay View Funding)
+367,Peninsula Bank Business Funding
+368,Pacific Mercantile Bancorp
+369,FBS business finance corporation
+370,"Crossroads Financial Group, LLC"
+371,Alliance Financial Capital
+372,American Commercial Finance Corporation 
+373,Bluebird Finance
+374,"Sand Hill Finance, LLC"
+375,Lloyds TSB Commercial Finance
+376,"Greystone Financial Services, LP"
+377,JD Factors LLC
+378,"Brooks Investment Co., controlled by Marjorie S. Brooks"
+379,"Metro Factors, Inc"
+380,"Moriah Capital, L.P. "
+381,Solar Capital Ltd.
+382,Wells Fargo Bank Iowa
+383,Bay View Funding
+384,"Jiangsu Jinmao Business Factoring Co., Ltd."
+385,Pacific Coast Farm Credit Services
+386,Bay View Funding.
+387,"Partners for Growth, L.P."
+388,"Marquette Commercial Finance, Inc. (formerly KBK Financial, Inc.)"
+389,"Accord Financial Services, Inc."
+390,"Panta Distribution, LLC"
+391,"Commodore Factors, Inc"
+392,"Daiwa Securities America, Inc"
+393,"Best Worth Agents, Ltd."
+394,"Accord Financial, Inc."
+395,Entrepreneur Growth Capital LLC
+396, Lloyds TSB Commercial Finance
+397,"Nationsbank, N.A"
+398,United Kingdom financial institution
+399,"Imperium Commercial Finance, LLC"
+400,"Aerofund Financial, Inc."
+401,Greenfield Commercial Credit LLC
+402,"Holt Finance, LLC"
+403,"Greenfield Commercial Credit, Inc."
+404,ABN Amro
+405,Factocic S.A. (sub of CIC Group)
+406,Alpha Capital Anstalt
+407,AE
+408,Oxford Funding Pty Ltd
+409,ArcelorMittal USA factoring agreement
+410,"OmniMetrix, LLC"
+411," Keltic Financial Partners II, LP"
+412,First Community Financial
+413,Stillwater National Bank
+414,Equinox Capital Management Limited
+415,LSQ Funding
+416,Benefactor Funding Corporation
+417,Waterside Capital Corporation
+418,Southern California Bank
+419,FCF
+420,"Bibby Financial Services, Inc."
+421,Medallion Financial Corp
+422,"Aspen Capital Management, LLC"
+423,Yankton Factors Inc
+424,"Charter Capital Holdings, L.P"
+425,First Community Financial Corporation
+426,Pacific Business Capital Corporation
+427,"Noreast Management, LLC"
+428,Evergreen Funding Corporation
+429,"Barclays Factoring, S.A"
+430,Bay View Funding ( BVF )
+431,"Rockland Credit Finance, LLC"
+432,BridgingFactor Inc
+433,Pacific Business Funding Corporation
+434,Far West Capital
+435,Lighthouse Capital Partners
+436,Key Capital Factoring
+437,Franklin Capital Corporation
+438,Capital Business Credit LLC
+439,"LSQ Funding Group, L.C."
+440,"Summit Financial Resources, L.P"
+441,Bibby Trade Services Ltd
+442,the UK bank
+443,"KBK Financial, Inc"
+444,"HARBORCOVE FUND I, LP (dba Harborcove Healthcare Finance)"
+445,"Agility Capital, LLC"
+446,"Marble Bridge Funding Group, Inc. "
+447,"ENGS Commercial Capital, LLC"
+448,"Churchill Investments, Inc."
+449,Capstone Business Credit LLC 
+450,American Chartered Bank
+451,"Itochu International, Inc."
+452,PM Factors Bancorp 
+453,"Mackinac Commercial Credit, LLC"
+454,Universal Funding Corporation
+455,ABC Factors
+456,Quantum Corporate Funding
+457,TruServ's By-Laws and the Retail Member
+458,First Francis Company Inc.
+459,"Mr. Brooks, the Company's VP of Operations"
+460,"Variosystems, Inc"
+461,"Capefirst Funding, LLC"
+462,"New Age Staffing, Inc. "
+463,AGC Funding Corporation
+464,"CSI Business Finance, Inc."
+465,United Capital Funding of Florida
+466,Capital Royalty Partners II L.P.
+467,"Powerup Lending Group, Ltd"
+468,CapitalSource Finance LLC
+469,CS First Boston 
+470,"GT Distribution, LLC "
+471,"Diamond Triumph Autoglass, Inc. "
+472,Canadian chartered bank
+473,DVI Business Credit Corporation
+474,Textron Financial Corporation
+475,"Gerber Finance, Inc"
+476,"Interface, Inc."
+477,NBC Holdings Corp.
+478,Toronto Dominion (Texas) LLC
+479,Thermo Credit LLC.
+480,"Hercules Holding II, LLC"
+481,Sun Capital
+482,"AgSouth Farm Credit, ACA"
+483,Wachovia Bank/Wells Fargo
+484,"Directories, LLC"
+485,"Landry Marks Partners, LP"
+486,"Goodman Capital Finance (a division of Independent Bank, Sanuwave, Inc.)"
+487,Advance Payroll Funding Ltd.
+488,"FirstPlus Financial Group, Inc."
+489,"Super G Funding, LLC"
+490,"SouthStar Financial, LLC"
+491,"CIT  Group/Business  Credit,  Inc"
+492,BFS
+493,JECC Corporation
+494,NationsBanc Commercial Corporation
+495,FUNB
+496,Merchant Factor Corporation (Merchant or Factor)
+497," Valtec Capital, LLC"
+498,Key Capital Factoring 
+499,Oasis Capital
+500,CIT Commercial Services (CIT)
+501,Richards Capital Corporation
+502,Medical Provider Financial Corporation I
+503,RZB Finance LLC
+504,"RTS Financial Service, Inc."
+505,ABN AMRO Commercial Finance
+506,"Evans & Sutherland, Inc."
+,Evans & Sutherland Computer Corporation
+507,"Access Capital, Inc"
+508,"Business
+Alliance Capital Corporation"
+509,"J.J. Ellis, LLC"
+510,WFBC
+511,Syratech Corporation
+512,Scaldis Capital LLC
+513,"Benefactor Group, Inc"
+,Benefactor Funding Corp. 
+514,"ROSENTHAL & ROSENTHAL, INC."
+515,Bab al Khail General Trading 
+516,Primary Funding Corporation
+517,CIT Group/Commercial Services Inc
+518,"New England Technology Finance, LLC"
+519,"Park Street Financial Services, LLC"
+520,BNP-Paribas
+521,Bradley Rotter
+522,Oxford Commercial Funding LLC.
+523,Natixis.
+524,Trinity Factoring Corp.
+525,YC SUSI Trust
+526,"G-III Leather Fashions, Inc."
+527,NEC Corporation
+528,Lockbox Bank
+529,"Columbia Partners, L.L.C. "
+530,"First Avenue Funding, LLC"
+531,"Farm Credit West, PCA"
+532,"Computer Contact Service, Inc"
+533,LSQ Funding Group L.C.
+534,"E.S. Bankest, LLC"
+535,LINK2IT CORPORATION
+536,CIT Commercial  Services
+537,"Res-Care, Inc."
+538,Spectrum Financial Corporation
+539,Jupiter Securitization Corporation
+540,"Versant Funding, LLC"
+541,Oxford Receivables Company
+542,LSQ Funding Group
+543,Horizon Technology Finance Corporation
+544,"Sound Solutions Window & Doors, LLC"
+545,Merchant Factors Corp.
+546,"Main Factors, Inc. "
+547,"LSQ Funding Group, LC"
+548,"Capital Factors, Inc."
+549,Merchant Factors Corp
+550,"Wells Fargo Century, Inc."
+551,"Rexford Funding, LLC"
+552,"the CIT Group/Commercial Services, Inc."
+553,SYSTRAN Financial Services Corporation
+554,Rockland Credit Finance
+555,Mediofactoring Spa
+556,Fortis Commercial Finance N.V.
+557,East Asia Heller
+558,"E. S. Bankest, LLC "
+559,Cadema Corporation
+560,"Hercules Capital, Inc."
+561,Ifitalia
+562,Porter Capital Corporation
+563,"Qualified Merchant Group, Inc. "
+564,Jupiter Securitization Company LLC
+565,Century Business Credit Corporation
+566,Benefactor Funding Corp
+567, Coast Business Credit
+568,Fordham
+569,"CIT Group/Commercial Services, Inc. "
+570,Unknown
+571," FCC, LLC (dba First Capital Western Region, LLC)"
+572,"Interstate Capital Corporation, Inc"
+573,HANNOVER FUNDING COMPANY LLC
+574,Redwood Receivables Corporation
