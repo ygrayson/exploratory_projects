@@ -1,0 +1,4 @@
+# Locomotion project git ignore
+
+# training logs
+PPO_logs/

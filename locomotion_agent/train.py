@@ -9,7 +9,8 @@ import torch
 import numpy as np
 
 import gym
-import roboschool
+import pybulletgym
+#TODO: update to PyBullet
 
 from PPO import PPO
 
@@ -18,7 +19,8 @@ def train():
     print("============================================================================================")
 
     ####### initialize environment hyperparameters ######
-    env_name = "RoboschoolWalker2d-v1"
+    # env_name = "RoboschoolWalker2d-v1"
+    env_name = "Walker2DPyBulletEnv-v0"
 
     has_continuous_action_space = True  # continuous action space; else discrete
 
