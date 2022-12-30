@@ -19,7 +19,6 @@ def train():
     print("============================================================================================")
 
     ####### initialize environment hyperparameters ######
-    # env_name = "RoboschoolWalker2d-v1"
     env_name = "Walker2DPyBulletEnv-v0"
 
     has_continuous_action_space = True  # continuous action space; else discrete
@@ -53,7 +52,6 @@ def train():
     #####################################################
 
     print("training environment name : " + env_name)
-
     env = gym.make(env_name)
 
     # state space dimension
@@ -155,7 +153,7 @@ def train():
     print("============================================================================================")
 
     # logging file
-    log_f = open(log_f_name,"w+")
+    log_f = open(log_f_name, "w+")
     log_f.write('episode,timestep,reward\n')
 
     # printing and logging variables

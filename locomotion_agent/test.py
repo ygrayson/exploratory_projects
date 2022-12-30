@@ -9,7 +9,7 @@ import torch
 import numpy as np
 
 import gym
-import roboschool
+import pybulletgym
 
 from PPO import PPO
 
@@ -35,13 +35,13 @@ def test():
     # max_ep_len = 1500           # max timesteps in one episode
     # action_std = 0.1            # set same std for action distribution which was used while saving
 
-    env_name = "RoboschoolWalker2d-v1"
+    env_name = "Walker2DPyBulletEnv-v0"
     has_continuous_action_space = True
     max_ep_len = 1000           # max timesteps in one episode
     action_std = 0.1            # set same std for action distribution which was used while saving
 
-    render = True              # render environment on screen
-    frame_delay = 0             # if required; add delay b/w frames
+    render = True               # render environment on screen
+    frame_delay = 0             # if required; add delay between frames
 
     total_test_episodes = 10    # total num of testing episodes
 
@@ -80,9 +80,9 @@ def test():
     ppo_agent.load(checkpoint_path)
 
     print("--------------------------------------------------------------------------------------------")
-
     test_running_reward = 0
 
+    # go through a number of episodes
     for ep in range(1, total_test_episodes+1):
         ep_reward = 0
         state = env.reset()
