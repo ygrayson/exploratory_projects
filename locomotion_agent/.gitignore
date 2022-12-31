@@ -1,5 +1,9 @@
-# Locomotion project git ignore
+## Locomotion project git ignore ##
 
 # training logs
 PPO_logs/
 PPO_preTrained/
+PPO_render/
+
+# temporary files
+tmp/

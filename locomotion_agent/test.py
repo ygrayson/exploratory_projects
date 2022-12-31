@@ -1,12 +1,14 @@
 """Code adapted from https://github.com/nikhilbarhate99/PPO-PyTorch"""
 
 import os
-import glob
+import pathlib
+# import glob
 import time
 from datetime import datetime
 
 import torch
 import numpy as np
+import cv2
 
 import gym
 import pybulletgym
@@ -35,13 +37,17 @@ def test():
     # max_ep_len = 1500           # max timesteps in one episode
     # action_std = 0.1            # set same std for action distribution which was used while saving
 
+    # environment hyperparameters
     env_name = "Walker2DPyBulletEnv-v0"
     has_continuous_action_space = True
     max_ep_len = 1000           # max timesteps in one episode
     action_std = 0.1            # set same std for action distribution which was used while saving
 
+    # renering hyperparameters
     render = True               # render environment on screen
     frame_delay = 0             # if required; add delay between frames
+    if render:
+        video_dir = os.path.join(pathlib.Path().absolute(), "PPO_render", env_name)
 
     total_test_episodes = 10    # total num of testing episodes
 
@@ -51,7 +57,6 @@ def test():
 
     lr_actor = 0.0003           # learning rate for actor
     lr_critic = 0.001           # learning rate for critic
-
     #####################################################
 
     env = gym.make(env_name)
@@ -82,22 +87,32 @@ def test():
     print("--------------------------------------------------------------------------------------------")
     test_running_reward = 0
 
-    # go through a number of episodes
-    for ep in range(1, total_test_episodes+1):
+    # loop through a number of episodes
+    for ep in range(1, total_test_episodes + 1):
         ep_reward = 0
         state = env.reset()
 
+        # write to video for rendering
+        video_writer = cv2.VideoWriter(
+            os.path.join(video_dir, "ep_" + ep + ".avi"), 
+            fourcc=cv2.VideoWriter_fourcc(*'MJPG'), 
+            fps=30, 
+            size=(320, 240)
+        )
+
+        # go through all timesteps in this episode
         for t in range(1, max_ep_len+1):
             action = ppo_agent.select_action(state)
             state, reward, done, _ = env.step(action)
             ep_reward += reward
 
             if render:
-                env.render()
-                time.sleep(frame_delay)
+                im = env.render(mode="rgb_array")
+                video_writer.write(im)
 
             if done:
                 break
+        video_writer.release()
 
         # clear buffer
         ppo_agent.buffer.clear()
