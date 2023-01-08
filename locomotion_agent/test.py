@@ -94,10 +94,10 @@ def test():
 
         # write to video for rendering
         video_writer = cv2.VideoWriter(
-            os.path.join(video_dir, "ep_" + ep + ".avi"), 
-            fourcc=cv2.VideoWriter_fourcc(*'MJPG'), 
-            fps=30, 
-            size=(320, 240)
+            os.path.join(video_dir, "ep_" + str(ep) + ".avi"), 
+            cv2.VideoWriter_fourcc(*'MJPG'), 
+            30, 
+            (320, 240)
         )
 
         # go through all timesteps in this episode
