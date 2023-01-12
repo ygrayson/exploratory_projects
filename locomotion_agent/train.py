@@ -8,9 +8,7 @@ from datetime import datetime
 import torch
 import numpy as np
 
-import gym
-import pybulletgym
-#TODO: update to PyBullet
+import gymnasium as gym
 
 from PPO import PPO
 
@@ -19,7 +17,7 @@ def train():
     print("============================================================================================")
 
     ####### initialize environment hyperparameters ######
-    env_name = "Walker2DPyBulletEnv-v0"
+    env_name = "BipedalWalker-v3"
 
     has_continuous_action_space = True  # continuous action space; else discrete
 
@@ -170,17 +168,18 @@ def train():
     while time_step <= max_training_timesteps:
 
         state = env.reset()
+        state = state[0]
         current_ep_reward = 0
 
         for t in range(1, max_ep_len+1):
 
             # select action with policy
             action = ppo_agent.select_action(state)
-            state, reward, done, _ = env.step(action)
+            state, reward, terminated, truncated, _ = env.step(action)
 
             # saving reward and is_terminals
             ppo_agent.buffer.rewards.append(reward)
-            ppo_agent.buffer.is_terminals.append(done)
+            ppo_agent.buffer.is_terminals.append(terminated)
 
             time_step +=1
             current_ep_reward += reward
@@ -228,7 +227,7 @@ def train():
                 print("--------------------------------------------------------------------------------------------")
 
             # break; if the episode is over
-            if done:
+            if terminated or truncated:
                 break
 
         print_running_reward += current_ep_reward

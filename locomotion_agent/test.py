@@ -10,7 +10,7 @@ import torch
 import numpy as np
 import cv2
 
-import gym
+import gymnasium as gym
 import pybulletgym
 
 from PPO import PPO
@@ -38,7 +38,7 @@ def test():
     # action_std = 0.1            # set same std for action distribution which was used while saving
 
     # environment hyperparameters
-    env_name = "Walker2DPyBulletEnv-v0"
+    env_name = "BipedalWalker-v3"
     has_continuous_action_space = True
     max_ep_len = 1000           # max timesteps in one episode
     action_std = 0.1            # set same std for action distribution which was used while saving
@@ -103,7 +103,7 @@ def test():
         # go through all timesteps in this episode
         for t in range(1, max_ep_len+1):
             action = ppo_agent.select_action(state)
-            state, reward, done, _ = env.step(action)
+            state, reward, _, _, _ = env.step(action)
             ep_reward += reward
 
             if render:
