@@ -11,8 +11,6 @@ import numpy as np
 import cv2
 
 import gymnasium as gym
-import pybulletgym
-
 from PPO import PPO
 
 
@@ -48,6 +46,8 @@ def test():
     frame_delay = 0             # if required; add delay between frames
     if render:
         video_dir = os.path.join(pathlib.Path().absolute(), "PPO_render", env_name)
+        if not os.path.exists(video_dir):
+          os.makedirs(video_dir)
 
     total_test_episodes = 10    # total num of testing episodes
 
@@ -59,7 +59,7 @@ def test():
     lr_critic = 0.001           # learning rate for critic
     #####################################################
 
-    env = gym.make(env_name)
+    env = gym.make(env_name, render_mode="rgb_array")
 
     # state space dimension
     state_dim = env.observation_space.shape[0]
@@ -90,29 +90,30 @@ def test():
     # loop through a number of episodes
     for ep in range(1, total_test_episodes + 1):
         ep_reward = 0
-        state = env.reset()
+        state, _ = env.reset()
+        height, width, _ = env.render().shape
 
         # write to video for rendering
-        video_writer = cv2.VideoWriter(
+        video_out = cv2.VideoWriter(
             os.path.join(video_dir, "ep_" + str(ep) + ".avi"), 
             cv2.VideoWriter_fourcc(*'MJPG'), 
-            30, 
-            (320, 240)
+            30,
+            (width, height)
         )
 
         # go through all timesteps in this episode
         for t in range(1, max_ep_len+1):
             action = ppo_agent.select_action(state)
-            state, reward, _, _, _ = env.step(action)
+            state, reward, terminated, truncated, _ = env.step(action)
             ep_reward += reward
 
             if render:
-                im = env.render(mode="rgb_array")
-                video_writer.write(im)
+                im = env.render()
+                video_out.write(im)
 
-            if done:
+            if terminated or truncated:
                 break
-        video_writer.release()
+        video_out.release()
 
         # clear buffer
         ppo_agent.buffer.clear()
