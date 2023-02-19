@@ -3,12 +3,10 @@
 import os
 import argparse
 from datetime import datetime
-
 import torch
 import numpy as np
 
 import gymnasium as gym
-
 from PPO import PPO
 
 ################################### Training ###################################
