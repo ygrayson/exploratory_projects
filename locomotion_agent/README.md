@@ -5,8 +5,8 @@ In this repository I train numerous funny and smart locomotion agents. These age
 ## List of Agents
 |        Agents       |     Environment Name     |Documentation Page|
 |---------------------|--------------------------|------------------|
-|    Bipedal Walker   |     BipedalWalker-v3     |[link](https://gymnasium.farama.org/environments/box2d/bipedal_walker/)|
-|    Lunar Lander     |      LunarLander-v2      |[link](https://gymnasium.farama.org/environments/box2d/lunar_lander/)|
+|    Bipedal Walker   |     BipedalWalker-v3     |[Gymnasium: Bipedal Walker](https://gymnasium.farama.org/environments/box2d/bipedal_walker/)|
+|    Lunar Lander     |      LunarLander-v2      |[Gymnasium: Lunar Lander](https://gymnasium.farama.org/environments/box2d/lunar_lander/)|
 
 ## Bipedal Walker
 2-Leg Walker in a 2D environment. The goal is to move forward.
