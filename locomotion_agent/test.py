@@ -45,11 +45,18 @@ def test():
     render = True               # render environment on screen
     frame_delay = 0             # if required; add delay between frames
     if render:
-        video_dir = os.path.join(pathlib.Path().absolute(), "PPO_render", env_name)
+        # save directory for video and logs
+        save_dir = os.path.join(pathlib.Path().absolute(), "PPO_render", env_name)
+        if not os.path.exists(save_dir):
+            os.makedirs(save_dir)
+        
+        # video sub-directory
+        idx = len(os.listdir(save_dir))
+        video_dir = os.path.join(save_dir, idx)
         if not os.path.exists(video_dir):
-          os.makedirs(video_dir)
+            os.makedirs(video_dir)
 
-    total_test_episodes = 10    # total num of testing episodes
+    total_test_episodes = 2    # total num of testing episodes
 
     K_epochs = 80               # update policy for K epochs
     eps_clip = 0.2              # clip parameter for PPO
@@ -95,7 +102,7 @@ def test():
 
         # write to video for rendering
         video_out = cv2.VideoWriter(
-            os.path.join(video_dir, "ep_" + str(ep) + ".avi"), 
+            os.path.join(save_dir, "ep_" + str(ep) + ".avi"), 
             cv2.VideoWriter_fourcc(*'MJPG'), 
             30,
             (width, height)
@@ -134,5 +141,4 @@ def test():
 
 
 if __name__ == '__main__':
-
     test()

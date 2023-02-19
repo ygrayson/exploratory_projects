@@ -1,8 +1,7 @@
 """Code adapted from https://github.com/nikhilbarhate99/PPO-PyTorch"""
 
 import os
-import glob
-import time
+import argparse
 from datetime import datetime
 
 import torch
@@ -13,13 +12,13 @@ import gymnasium as gym
 from PPO import PPO
 
 ################################### Training ###################################
-def train():
+def train(args):
     print("============================================================================================")
 
     ####### initialize environment hyperparameters ######
-    env_name = "BipedalWalker-v3"
+    env_name = args.env_name # "BipedalWalker-v3"
 
-    has_continuous_action_space = True  # continuous action space; else discrete
+    has_continuous_action_space = args.continous  # continuous action space; else discrete
 
     max_ep_len = 1000                   # max timesteps in one episode
     max_training_timesteps = int(3e6)   # break training loop if timeteps > max_training_timesteps
@@ -167,8 +166,8 @@ def train():
     # training loop
     while time_step <= max_training_timesteps:
 
-        state = env.reset()
-        state = state[0]
+        # reset environment for new episode
+        state, _ = env.reset()
         current_ep_reward = 0
 
         for t in range(1, max_ep_len+1):
@@ -249,6 +248,19 @@ def train():
     print("Total training time  : ", end_time - start_time)
     print("============================================================================================")
 
+def read_arg():
+    """Read in command line arguments."""
+    parser = argparse.ArgumentParser()
+
+    # add arguments
+    parser.add_argument("-e", "--env_name", action="store", required=True, type=str,
+        help="Specify the environment name")
+    parser.add_argument("-c", "--continous", action="store_true",
+        help="Specify if the environment has continous action space")
+
+    return parser.parse_args()
 
 if __name__ == '__main__':
-    train()
+    # train agent with arguments
+    args = read_arg()
+    train(args)
