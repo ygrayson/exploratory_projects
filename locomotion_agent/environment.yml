@@ -10,4 +10,5 @@ dependencies:
   - pip:
       - gymnasium
       - box2d-py
+      - mujoco
 prefix: /home/qianbo/miniconda3/envs/rl

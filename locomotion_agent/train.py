@@ -19,7 +19,7 @@ def train(args):
     has_continuous_action_space = args.continous  # continuous action space; else discrete
 
     max_ep_len = 1000                   # max timesteps in one episode
-    max_training_timesteps = int(3e6)   # break training loop if timeteps > max_training_timesteps
+    max_training_timesteps = int(3e6)   # break training loop if timesteps > max_training_timesteps
 
     print_freq = max_ep_len * 10        # print avg reward in the interval (in num timesteps)
     log_freq = max_ep_len * 2           # log avg reward in the interval (in num timesteps)
@@ -63,11 +63,11 @@ def train(args):
     #### log files for multiple runs are NOT overwritten
     log_dir = "PPO_logs"
     if not os.path.exists(log_dir):
-          os.makedirs(log_dir)
+        os.makedirs(log_dir)
 
     log_dir = log_dir + '/' + env_name + '/'
     if not os.path.exists(log_dir):
-          os.makedirs(log_dir)
+        os.makedirs(log_dir)
 
     #### get number of log files in log directory
     run_num = 0
@@ -86,11 +86,11 @@ def train(args):
 
     directory = "PPO_preTrained"
     if not os.path.exists(directory):
-          os.makedirs(directory)
+        os.makedirs(directory)
 
     directory = directory + '/' + env_name + '/'
     if not os.path.exists(directory):
-          os.makedirs(directory)
+        os.makedirs(directory)
 
 
     checkpoint_path = directory + "PPO_{}_{}_{}.pth".format(env_name, random_seed, run_num_pretrained)
@@ -148,7 +148,7 @@ def train(args):
     print("============================================================================================")
 
     # logging file
-    log_f = open(log_f_name, "w+")
+    log_f = open(log_f_name, "w+", encoding='utf-8')
     log_f.write('episode,timestep,reward\n')
 
     # printing and logging variables

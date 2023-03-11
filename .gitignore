@@ -6,3 +6,6 @@
 
 # large data file
 **/data/
+
+# temporary files
+**/tmp/
