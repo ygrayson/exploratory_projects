@@ -47,14 +47,14 @@ def test():
         save_dir = os.path.join(pathlib.Path().absolute(), "PPO_render", env_name)
         if not os.path.exists(save_dir):
             os.makedirs(save_dir)
-        
+
         # video sub-directory
-        idx = len(os.listdir(save_dir))
-        video_dir = os.path.join(save_dir, idx)
+        video_idx = len(os.listdir(save_dir))
+        video_dir = os.path.join(save_dir, str(video_idx))
         if not os.path.exists(video_dir):
             os.makedirs(video_dir)
 
-    total_test_episodes = 2    # total num of testing episodes
+    total_test_episodes = 4    # total num of testing episodes
 
     K_epochs = 80               # update policy for K epochs
     eps_clip = 0.2              # clip parameter for PPO
@@ -79,12 +79,11 @@ def test():
     ppo_agent = PPO(state_dim, action_dim, lr_actor, lr_critic, gamma, K_epochs, eps_clip, has_continuous_action_space, action_std)
 
     # preTrained weights directory
-
     random_seed = 0             #### set this to load a particular checkpoint trained on random seed
     run_num_pretrained = 1      #### set this to load a particular checkpoint num
 
     directory = "PPO_preTrained" + '/' + env_name + '/'
-    checkpoint_path = directory + "PPO_{}_{}_{}.pth".format(env_name, random_seed, run_num_pretrained)
+    checkpoint_path = directory + f"PPO_{env_name}_{random_seed}_{run_num_pretrained}.pth"
     print("loading network from : " + checkpoint_path)
 
     ppo_agent.load(checkpoint_path)
@@ -100,7 +99,7 @@ def test():
 
         # write to video for rendering
         video_out = cv2.VideoWriter(
-            os.path.join(save_dir, "ep_" + str(ep) + ".avi"), 
+            os.path.join(video_dir, "ep_" + str(ep) + ".avi"), 
             cv2.VideoWriter_fourcc(*'MJPG'), 
             30,
             (width, height)
@@ -113,18 +112,19 @@ def test():
             ep_reward += reward
 
             if render:
-                im = env.render()
-                video_out.write(im)
+                img = env.render()
+                video_out.write(img)
 
             if terminated or truncated:
                 break
-        video_out.release()
+        if render:
+            video_out.release()
 
         # clear buffer
         ppo_agent.buffer.clear()
 
         test_running_reward +=  ep_reward
-        print('Episode: {} \t\t Reward: {}'.format(ep, round(ep_reward, 2)))
+        print(f'Episode: {ep} \t\t Reward: {round(ep_reward, 2)}')
         ep_reward = 0
 
     env.close()
