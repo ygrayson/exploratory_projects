@@ -34,7 +34,7 @@ def test():
     # action_std = 0.1            # set same std for action distribution which was used while saving
 
     # environment hyperparameters
-    env_name = "BipedalWalker-v3"
+    env_name = "Ant-v4" #Humanoid-v4, BipedalWalker-v3
     has_continuous_action_space = True
     max_ep_len = 1000           # max timesteps in one episode
     action_std = 0.1            # set same std for action distribution which was used while saving
@@ -117,6 +117,7 @@ def test():
 
             if terminated or truncated:
                 break
+            # print(t)
         if render:
             video_out.release()
 

@@ -1,0 +1,2 @@
+# Train agent
+python train.py --env_name XXX --continous --checkpoint_num X

@@ -19,7 +19,7 @@ def train(args):
     has_continuous_action_space = args.continous  # continuous action space; else discrete
 
     max_ep_len = 1000                   # max timesteps in one episode
-    max_training_timesteps = int(3e6)   # break training loop if timesteps > max_training_timesteps
+    max_training_timesteps = int(1e7)   # break training loop if timesteps > max_training_timesteps
 
     print_freq = max_ep_len * 10        # print avg reward in the interval (in num timesteps)
     log_freq = max_ep_len * 2           # log avg reward in the interval (in num timesteps)
@@ -82,8 +82,6 @@ def train(args):
     #####################################################
 
     ################### checkpointing ###################
-    run_num_pretrained = 1      #### change this to prevent overwriting weights in same env_name folder
-
     directory = "PPO_preTrained"
     if not os.path.exists(directory):
         os.makedirs(directory)
@@ -93,7 +91,7 @@ def train(args):
         os.makedirs(directory)
 
 
-    checkpoint_path = directory + "PPO_{}_{}_{}.pth".format(env_name, random_seed, run_num_pretrained)
+    checkpoint_path = directory + "PPO_{}_{}_{}.pth".format(env_name, random_seed, args.checkpoint_num)
     print("save checkpoint path : " + checkpoint_path)
     #####################################################
 
@@ -255,6 +253,8 @@ def read_arg():
         help="Specify the environment name")
     parser.add_argument("-c", "--continous", action="store_true",
         help="Specify if the environment has continous action space")
+    parser.add_argument("-n", "--checkpoint_num", action="store", default=0, type=int,
+        help="Number index for the saved checkpoint name, prevent overwriting other checkpoints")
 
     return parser.parse_args()
 
