@@ -8,3 +8,7 @@ PPO_render/
 # temporary files
 tmp/
 train_2.py
+
+# environment file
+env/
+env*
