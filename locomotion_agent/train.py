@@ -250,7 +250,7 @@ def read_arg():
     # add arguments
     parser.add_argument("-e", "--env_name", action="store", required=True, type=str,
         help="Specify the environment name")
-    parser.add_argument("-c", "--continous", action="store_true",
+    parser.add_argument("-c", "--continous", action="store_true", default=False,
         help="Specify if the environment has continous action space")
     parser.add_argument("-t", "--train_timesteps", action="store", default=1e7, type=int,
         help="Training timesteps")
