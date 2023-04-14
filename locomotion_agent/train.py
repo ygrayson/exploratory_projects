@@ -90,7 +90,6 @@ def train(args):
     if not os.path.exists(directory):
         os.makedirs(directory)
 
-
     checkpoint_path = directory + "PPO_{}_{}_{}.pth".format(env_name, random_seed, args.checkpoint_num)
     print("save checkpoint path : " + checkpoint_path)
     #####################################################

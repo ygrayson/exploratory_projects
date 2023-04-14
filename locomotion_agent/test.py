@@ -34,7 +34,7 @@ def test():
     # action_std = 0.1            # set same std for action distribution which was used while saving
 
     # environment hyperparameters
-    env_name = "Ant-v4" #Humanoid-v4, BipedalWalker-v3
+    env_name = "Humanoid-v4" #Humanoid-v4, BipedalWalker-v3, Ant-v4
     has_continuous_action_space = True
     max_ep_len = 1000           # max timesteps in one episode
     action_std = 0.1            # set same std for action distribution which was used while saving
@@ -113,6 +113,7 @@ def test():
 
             if render:
                 img = env.render()
+                img = cv2.cvtColor(img, cv2.COLOR_RGB2BGR)
                 video_out.write(img)
 
             if terminated or truncated:
